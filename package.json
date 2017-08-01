@@ -1,8 +1,8 @@
 {
   "name": "adolph",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Smart functions for daily challenges",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/matheusmariano/adolph",
   "author": "Matheus Mariano <vmatheus.mariano@gmail.com>",
   "license": "MIT",
