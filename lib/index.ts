@@ -27,3 +27,14 @@ export const paginate = R.curry((p, perPage, list) => {
   const limit = page * perPage;
   return R.slice(offset, limit, list);
 });
+
+export const removeByProp = R.curry((prop, value, list) => {
+  const index = R.findIndex(
+    R.propEq(prop, value),
+    list,
+  );
+
+  return index > -1 ?
+    R.remove(index, 1, list) :
+    list;
+});

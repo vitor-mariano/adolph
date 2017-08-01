@@ -3,6 +3,7 @@ import {
   clearString,
   filterByProp,
   paginate,
+  removeByProp,
 } from './';
 
 test('clearString', () => {
@@ -63,4 +64,24 @@ test('paginate', () => {
   expect(
     paginate(3, 15, list),
   ).toEqual([]);
+});
+
+test('removeByProp', () => {
+  const list = R.pipe(
+    R.inc,
+    R.range(1),
+    R.map(id => ({ id })),
+  )(4);
+
+  expect(
+    removeByProp('id', 2, list),
+  ).toEqual([
+    { id: 1 },
+    { id: 3 },
+    { id: 4 },
+  ]);
+
+  expect(
+    removeByProp('id', 0, list),
+  ).toEqual(list);
 });
