@@ -1,6 +1,8 @@
+import * as R from 'ramda';
 import {
   clearString,
   filterByProp,
+  paginate,
 } from './';
 
 test('clearString', () => {
@@ -41,4 +43,24 @@ test('filterByProp', () => {
       name: 'José Raphaël',
     },
   ]);
+});
+
+test('paginate', () => {
+  const list = R.range(0, 20);
+
+  expect(
+    paginate(1, 10, list),
+  ).toEqual(
+    R.take(10, list),
+  );
+
+  expect(
+    paginate(2, 15, list),
+  ).toEqual(
+    R.slice(15, Infinity, list),
+  );
+
+  expect(
+    paginate(3, 15, list),
+  ).toEqual([]);
 });

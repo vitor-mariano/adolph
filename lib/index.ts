@@ -20,3 +20,10 @@ export const filterByProp = R.curry((prop, query, list) => {
     list,
   );
 });
+
+export const paginate = R.curry((p, perPage, list) => {
+  const page = R.clamp(1, Infinity, p);
+  const offset = perPage * R.dec(page);
+  const limit = page * perPage;
+  return R.slice(offset, limit, list);
+});
