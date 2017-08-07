@@ -22,9 +22,9 @@ clearString('José Raphaël'); // jose raphael
 
 ### filterByProp
 
-###### Added in v0.1.0
-
 `String → a → [{k: v}] → [{k: v}]`
+
+###### Added in v0.1.0
 
 Filter objects from `list` where `prop` matches the given `query`.
 
@@ -35,9 +35,9 @@ filterByProp('name', 'jose', list); // [{ name: 'José Raphaël' }, { name: 'Jos
 
 ### paginate
 
-###### Added in v0.1.0
-
 `Number → Number → [a] → [a]`
+
+###### Added in v0.1.0
 
 Get the `nth` portion of `n` size portions of a `list`.
 
@@ -51,6 +51,8 @@ paginate(2, 10, list); // [{ id: 11 }, { id: 12 }, ..., { id: 20 }]
 ###### Added in v0.1.0
 
 `String → a → [{k: v}] → [{k: v}]`
+
+###### Added in v0.1.0
 
 Remove the first object from `list` where `prop` matches the given `value`.
 
