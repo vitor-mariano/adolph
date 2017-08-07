@@ -12,6 +12,8 @@ Smart functions for daily challenges
 
 `String → String`
 
+###### Added in v0.1.0
+
 Remove accents and uppercase characters.
 
 ``` javascript
@@ -19,6 +21,8 @@ clearString('José Raphaël'); // jose raphael
 ```
 
 ### filterByProp
+
+###### Added in v0.1.0
 
 `String → a → [{k: v}] → [{k: v}]`
 
@@ -31,6 +35,8 @@ filterByProp('name', 'jose', list); // [{ name: 'José Raphaël' }, { name: 'Jos
 
 ### paginate
 
+###### Added in v0.1.0
+
 `Number → Number → [a] → [a]`
 
 Get the `nth` portion of `n` size portions of a `list`.
@@ -41,6 +47,8 @@ paginate(2, 10, list); // [{ id: 11 }, { id: 12 }, ..., { id: 20 }]
 ```
 
 ### removeByProp
+
+###### Added in v0.1.0
 
 `String → a → [{k: v}] → [{k: v}]`
 
