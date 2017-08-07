@@ -48,8 +48,6 @@ paginate(2, 10, list); // [{ id: 11 }, { id: 12 }, ..., { id: 20 }]
 
 ### removeByProp
 
-###### Added in v0.1.0
-
 `String → a → [{k: v}] → [{k: v}]`
 
 ###### Added in v0.1.0
