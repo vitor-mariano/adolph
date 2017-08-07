@@ -50,7 +50,7 @@ paginate(2, 10, list); // [{ id: 11 }, { id: 12 }, ..., { id: 20 }]
 
 `String → a → [{k: v}] → [{k: v}]`
 
-###### Added in v0.1.0
+###### Added in v0.2.0
 
 Remove the first object from `list` where `prop` matches the given `value`.
 
