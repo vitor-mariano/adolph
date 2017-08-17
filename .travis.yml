@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - 7
+  - 6
+
+before_install:
+  - yarn global add typescript
+
+before_script:
+  - tsc
+
+script:
+  - yarn lint
+  - yarn test
+
+sudo: false
