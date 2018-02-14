@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "sourceMap": true
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
